@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.img{
+    width:10%;
+    object-fit: cover;
+    height:auto;
+}
+
+body {
+  background-image:url(Netflix\ Indian\ Movies\ and\ Web\ Series.jpg);
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  width: 120px;
+}
+
+.sign-in-btn {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 4px;
+  height: 5%;
+  text-decoration: none;
+}
+
+.hero {
+  height: 100vh;
+  background: url('https://assets.nflxext.com/ffe/siteui/vlv3/4e1cf678-a491-4b5a-95d5-342be2906a8f/cdd62fc1-74e7-4f63-8372-82c0228e0280/US-en-20230612-popsignuptwoweeks-perspective_alpha_website_large.jpg') center center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.email-form input {
+  padding: 10px;
+  width: 300px;
+  max-width: 80%;
+  border: none;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+.email-form button {
+  padding: 10px 20px;
+  background-color: green;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 2px;
+}

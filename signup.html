@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Up - Streamflix</title>
+  <link rel="stylesheet" href="signin.css" />
+</head>
+<body>
+  <div class="signin-container">
+    <form class="signin-form" id="signupForm">
+      <h1>Sign Up</h1>
+
+      <input type="email" id="email" placeholder="Email address" required />
+
+      <div class="password-wrapper">
+        <input type="password" id="password" placeholder="Password" required />
+        <span id="togglePassword">👁️</span>
+      </div>
+
+      <div id="error" class="error-message"></div>
+
+      <button type="submit">Sign Up</button>
+
+      <p class="signup-text">
+        Already have an account? <a href="signin.html">Sign in here</a>.
+      </p>
+    </form>
+  </div>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="signup.js"></script>
+</body>
+</html>
