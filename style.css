@@ -83,15 +83,33 @@ header{padding: 5%;
   font-size: 16px; font-weight: 500;
 }
 
-body::before{ 
-  background: rgba(0, 0, 0, 0.6);
+body::before {
   content: "";
   position: fixed;
-  top: 0; left: 0;
-  height: 100vh;width: 100vw;}
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+
 
   @supports (-webkit-touch-callout: none) {
   body::before {
     height: -webkit-fill-available;
   }
 }
+
+@media (max-width: 600px) {
+  h1.hero {
+    font-size: 1.8rem; /* smaller for mobile */
+    padding: 0 15px;
+  }
+  .btn-get-started {
+    width: 90%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
