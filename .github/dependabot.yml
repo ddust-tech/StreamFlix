@@ -1,12 +1,47 @@
-# To get started with Dependabot version updates, you'll need to specify which
-# package ecosystems to update and where the package manifests are located.
-# Please see the documentation for all configuration options:
-# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+# ==========================================================
+# Dependabot configuration for StreamFlix
+# Author: Daniel Adebayo (ddust-tech)
+# ==========================================================
+# Dependabot is a GitHub tool that automatically checks for
+# outdated or vulnerable dependencies in your project.
+# It can create pull requests to keep your project secure
+# and up to date automatically.
+# ==========================================================
 
-version: 2
+version: 2  # Always keep this as "2" (the current dependabot config version)
+
 updates:
-  - package-ecosystem: "" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  # ----------------------------------------------------------
+  # 1️⃣  Check and update npm packages (if you use Node.js)
+  # ----------------------------------------------------------
+  - package-ecosystem: "npm"     # Tells Dependabot to check npm dependencies
+    directory: "/"               # Where your package.json file lives (root)
     schedule:
-      interval: "weekly"
-      
+      interval: "weekly"         # Check for updates once a week
+      day: "sunday"              # Optional: run every Sunday
+      time: "02:00"              # Optional: UTC time (can change)
+    commit-message:
+      prefix: "npm update"       # PR title prefix (e.g., "npm update: lodash")
+    open-pull-requests-limit: 5  # Max number of Dependabot PRs open at once
+    rebase-strategy: "auto"      # Auto rebase PRs when conflicts occur
+
+  # ----------------------------------------------------------
+  # 2️⃣  Check and update GitHub Actions workflows
+  # ----------------------------------------------------------
+  - package-ecosystem: "github-actions"  # For .github/workflows/*.yml files
+    directory: "/"                       # Root directory
+    schedule:
+      interval: "weekly"                 # Check once a week
+      day: "sunday"
+      time: "03:00"
+    commit-message:
+      prefix: "ci update"                # PR title prefix for CI updates
+    open-pull-requests-limit: 3
+
+# ==========================================================
+# 💡 Notes:
+# - Even if StreamFlix currently has no npm packages, this setup
+#   keeps you ready when you start using them (like React, Tailwind, etc.)
+# - Dependabot will appear under your repo’s “Security” tab on GitHub.
+# - You can change “weekly” to “daily” or “monthly” depending on preference.
+# ==========================================================
