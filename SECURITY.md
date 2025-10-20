@@ -1,38 +1,38 @@
-Security Policy
-Supported Versions
+# 🔒 Security Policy
 
-Currently, only the latest version of StreamFlix is supported with security updates.
+## Supported Versions
+Currently this stage, only the latest version of StreamFlix (main branch) is maintained and supported with security updates.
 
-Version	Supported
-Latest (main branch)	✅
-Older versions	❌
-Reporting a Vulnerability
+| Version | Supported |
+|----------|------------|
+| Latest (main branch) | ✅ Supported |
+| Older versions        | ❌ Not supported |
 
-If you discover any security issue or vulnerability in StreamFlix, please follow these steps:
+---
 
-Do not publicly disclose the issue until it has been reviewed and fixed.
+## Reporting a Vulnerability
+If you discover a security issue or vulnerability in **StreamFlix**, please **do not** open a public issue.
 
-Contact me directly by email or GitHub issues with a clear and detailed report.
+Instead:
+1. Report the issue privately via email or GitHub contact.  
+2. Include clear details such as:
+   - The nature of the vulnerability  
+   - Steps to reproduce it  
+   - Any potential fix or suggestion (if available)
 
-Include:
+I will:
+- Review and verify the report as soon as possible  
+- Work on a fix or mitigation  
+- Credit you for responsible disclosure (if you’d like)
 
-Description of the issue
+---
 
-Steps to reproduce it
+## Contact
+**Maintainer:** Daniel Adebayo  
+GitHub: [@ddust-tech](https://github.com/ddust-tech)  
+Email: *(optional — add if you want people to reach you directly)*
 
-Possible fix or suggestion (if known)
+---
 
-Once reported, I will:
-
-Review and verify the issue.
-
-Prioritize fixing it as soon as possible.
-
-Acknowledge your contribution if desired.
-
-Contact
-
-Maintainer: Daniel Adebayo
-GitHub: ddust-tech
-
-Email: [danieladeba16@gmail.com]
+## Acknowledgment
+Thank you for helping to make StreamFlix a safer and more reliable project for everyone.
