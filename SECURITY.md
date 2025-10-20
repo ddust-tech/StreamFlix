@@ -1,21 +1,38 @@
-# Security Policy
+Security Policy
+Supported Versions
 
-## Supported Versions
+Currently, only the latest version of StreamFlix is supported with security updates.
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Version	Supported
+Latest (main branch)	✅
+Older versions	❌
+Reporting a Vulnerability
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+If you discover any security issue or vulnerability in StreamFlix, please follow these steps:
 
-## Reporting a Vulnerability
+Do not publicly disclose the issue until it has been reviewed and fixed.
 
-Use this section to tell people how to report a vulnerability.
+Contact me directly by email or GitHub issues with a clear and detailed report.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Include:
+
+Description of the issue
+
+Steps to reproduce it
+
+Possible fix or suggestion (if known)
+
+Once reported, I will:
+
+Review and verify the issue.
+
+Prioritize fixing it as soon as possible.
+
+Acknowledge your contribution if desired.
+
+Contact
+
+Maintainer: Daniel Adebayo
+GitHub: ddust-tech
+
+Email: [danieladeba16@gmail.com]
