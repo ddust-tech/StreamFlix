@@ -3,28 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Streamflix</title>
-  <link rel="Icon" href="Purple Yellow Black Neon SciFi YouTube Icon.png">
-  <link rel="stylesheet" href="index.css">
+  <title>StreamFlix</title>
+  <link rel="Icon" href="SF LOGO.jpg">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <img   src="Purple Yellow Black Neon SciFi YouTube Icon.png" alt="streamflix logo" class="img" >
-      <a href="signin.html" class="sign-in-btn">Sign in</a>
+  <div class="body">
+  <header>
+      <div class="logo">SF</div>
+      <div>
+        <div style="font-weight:800" class="slogo">StreamFlix</div>
+      </div>
+      <form action="signin.html">
+      <button type="submit" class="sign-in-btn">Sign In</button>
+      </form>
   </header>
 
   <section class="hero">
     <div class="hero-content">
-      <h1>Escape into a world of endless streaming.</h1>
-      <h2>Watch anywhere. Watch anytime.</h2>
-      <p>Ready to dive in? Submit your email to create or restart your membership.</p>
+      <h1>Stream unlimited movies, <br>TV shows, and more!</h1>
+      <p>Starting at $5. Cancel anytime, no hassle.</p>
+      <p>Ready to dive in? Enter your email to join or restart your membership today!</p>
+      <div>
       <form class="email-form">
         <input type="email" placeholder="Email address" required>
-        <button type="submit">Get Started &gt;</button>
+        <button type="submit">Get Started</button>
       </form>
+      </div>
     </div>
   </section>
 
-  <script src="index.js"></script>
+  <script src="script.js"></script>
+  </div>
 </body>
 </html>
