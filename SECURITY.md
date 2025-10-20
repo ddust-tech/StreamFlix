@@ -30,7 +30,7 @@ I will:
 ## Contact
 **Maintainer:** Daniel Adebayo  
 GitHub: [@ddust-tech](https://github.com/ddust-tech)  
-Email: *(optional — add if you want people to reach you directly)*
+Email: *(danieladeba16@gmail.com)*
 
 ---
 
